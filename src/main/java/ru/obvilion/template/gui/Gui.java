@@ -15,6 +15,7 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import ru.obvilion.template.Vars;
 import ru.obvilion.template.client.Loader;
+import ru.obvilion.template.utils.Log;
 import ru.obvilion.template.utils.StyleUtil;
 import ru.obvilion.template.utils.WindowResizeUtil;
 

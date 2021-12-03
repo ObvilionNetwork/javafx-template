@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="root" fx:controller="ru.obvilion.template.controllers.ContentController" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+    <Label fx:id="label" text="Hello world" style="-fx-text-fill: #fff; -fx-font-size: 24"
+           layoutY="${root.height / 2 - label.height / 2}" layoutX="${root.width / 2 - label.width / 2}" />
+</Pane>

@@ -4,7 +4,8 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.shape.*?>
 
-<AnchorPane fx:id="root" prefHeight="660" prefWidth="1165" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="ru.obvilion.template.controllers.FrameController">
+<AnchorPane fx:id="root" prefHeight="660" prefWidth="1165" xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml" fx:controller="ru.obvilion.template.controllers.FrameController">
     <Pane fx:id="WINDOW" layoutX="5" layoutY="5" prefHeight="650" prefWidth="1155">
         <!-- Background -->
         <Pane fx:id="BG" prefHeight="${WINDOW.height}" prefWidth="${WINDOW.width}" />
@@ -15,7 +16,7 @@
 
         <!-- Top bar -->
         <Pane fx:id="TOP_BAR" prefHeight="30.0" prefWidth="${WINDOW.width}">
-            <Pane fx:id="CLOSE_BUTTON" layoutX="${CONTENT.width - 47}" prefHeight="36" prefWidth="47">
+            <Pane fx:id="CLOSE_BUTTON" layoutX="${WINDOW.width - 47}" prefHeight="36" prefWidth="47">
                 <Pane layoutX="15" layoutY="11">
                     <SVGPath content="M8.22 8L14.8089 1.3798C14.897 1.29164 14.897 1.14873 14.8089 1.06057C14.7207 0.972436 14.5778 0.972436 14.4897 1.06057L7.87641 7.58586L4.56978 4.3672L1.26315 1.06057C1.17346 0.97396 1.03056 0.976443 0.94392 1.06613C0.859428 1.15361 0.859428 1.29231 0.94392 1.3798L7.5 7.99306L0.94392 14.6063C0.854236 14.693 0.851752 14.8359 0.938389 14.9255C1.02503 15.0152 1.16793 15.0177 1.25762 14.9311C1.25951 14.9293 1.26134 14.9274 1.26315 14.9255L7.87641 8.39288L14.4897 14.9255C14.5794 15.0122 14.7223 15.0097 14.8089 14.92C14.8934 14.8325 14.8934 14.6938 14.8089 14.6063L8.22 8Z" scaleX="0.7" scaleY="0.7" stroke="WHITE" strokeWidth="0.9" />
                 </Pane>
@@ -25,7 +26,7 @@
                 </cursor>
             </Pane>
 
-            <Pane fx:id="MAXIMISE_BUTTON" layoutX="${CONTENT.width - 94}" prefHeight="36" prefWidth="46">
+            <Pane fx:id="MAXIMISE_BUTTON" layoutX="${WINDOW.width - 94}" prefHeight="36" prefWidth="46">
                 <Pane layoutX="15" layoutY="11">
                     <SVGPath content="M3.24981 0V3.24966H0V14H10.7505V10.7502H14V0H3.24981ZM10.1905 13.44H0.559991V3.80966H10.1905V13.44ZM13.44 10.1902H10.7504V3.24966H3.8098V0.559991H13.44V10.1902Z" layoutY="1" scaleX="0.71" scaleY="0.71" stroke="WHITE" strokeWidth="0.7" />
                 </Pane>
@@ -35,7 +36,7 @@
                 </cursor>
             </Pane>
 
-            <Pane fx:id="HIDE_BUTTON" layoutX="${CONTENT.width - 140}" prefHeight="36" prefWidth="46">
+            <Pane fx:id="HIDE_BUTTON" layoutX="${WINDOW.width - 140}" prefHeight="36" prefWidth="46">
                 <Pane layoutX="17" layoutY="21" prefHeight="0.9" prefWidth="10.5" style="-fx-background-color: white" />
 
                 <cursor>
