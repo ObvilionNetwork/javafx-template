@@ -3,7 +3,6 @@ package ru.obvilion.template.controllers;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.print.PageLayout;
 import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
 import ru.obvilion.template.Vars;
