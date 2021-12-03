@@ -1,0 +1,27 @@
+@font-face {
+    src: url("fonts/IstokWeb-Bold.ttf");
+}
+@font-face {
+    src: url("fonts/IstokWeb-Regular.ttf");
+}
+
+#root {
+    -fx-background-color: transparent;
+}
+* {
+    -fx-font-smoothing-type: gray;
+}
+
+#BG {
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover, auto;
+    -fx-background-position: center center;
+    -fx-background-image: url(images/bg.jpg)
+}
+
+#CLOSE_BUTTON:hover {
+    -fx-background-color: rgba(240, 122, 122, 0.5);
+}
+#HIDE_BUTTON:hover, #MAXIMISE_BUTTON:hover {
+    -fx-background-color: rgba(256, 256, 256, 0.1);
+}

@@ -1,0 +1,53 @@
+import org.apache.tools.ant.taskdefs.condition.Os
+
+plugins {
+    id 'org.openjfx.javafxplugin' version '0.0.9' apply false
+}
+
+apply plugin: 'org.openjfx.javafxplugin'
+
+javafx {
+    version = "11"
+    modules = ['javafx.controls', 'javafx.fxml']
+}
+
+repositories {
+    mavenCentral()
+    jcenter()
+    maven { url "https://jitpack.io" }
+}
+
+String mainClassName = "ru.obvilion.template.ClientLauncherWrapper"
+group 'ru.obvilion'
+version '0.1.0'
+
+compileJava.options.encoding = "UTF-8"
+compileTestJava.options.encoding = "UTF-8"
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+jar {
+    baseName("example")
+
+    manifest {
+        attributes 'Main-Class': mainClassName
+    }
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
+dependencies {
+    if (!Os.isFamily(Os.FAMILY_WINDOWS)) {
+        implementation (files('libs/javafx-graphics-11.0.2-win.jar'))
+    }
+
+    if (!Os.isFamily(Os.FAMILY_UNIX)) {
+        implementation (files('libs/javafx-graphics-11.0.2-linux.jar'))
+    }
+
+    if (!Os.isFamily(Os.FAMILY_MAC)) {
+        implementation (files('libs/javafx-graphics-11.0.2-mac.jar'))
+    }
+}
